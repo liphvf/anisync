@@ -1,0 +1,509 @@
+Starting OmniSharp server at 2022-03-08, 12:00:41 a.m.
+    Target: e:\Github\anisync
+
+OmniSharp server started.
+    Path: c:\Users\liphv\.vscode\extensions\ms-dotnettools.csharp-1.24.1\.omnisharp\1.38.1\OmniSharp.exe
+    PID: 7916
+
+[info]: OmniSharp.Stdio.Host
+        Starting OmniSharp on Windows 6.2.9200.0 (x64)
+[info]: OmniSharp.Services.DotNetCliService
+        Checking the 'DOTNET_ROOT' environment variable to find a .NET SDK
+[info]: OmniSharp.Services.DotNetCliService
+        Using the 'dotnet' on the PATH.
+[info]: OmniSharp.Services.DotNetCliService
+        DotNetPath set to dotnet
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Located 2 MSBuild instance(s)
+            1: Visual Studio Professional 2022 17.1.32210.238 17.1.0 - "C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin"
+            2: StandAlone 17.1.0 - "c:\Users\liphv\.vscode\extensions\ms-dotnettools.csharp-1.24.1\.omnisharp\1.38.1\.msbuild\Current\Bin"
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Registered MSBuild instance: Visual Studio Professional 2022 17.1.32210.238 17.1.0 - "C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin"
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.CSharpFormattingWorkspaceOptionsProvider, Order: 0
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.ImplementTypeWorkspaceOptionsProvider, Order: 110
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Detecting Cake files in 'e:\Github\anisync'.
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Did not find any Cake files
+[info]: OmniSharp.MSBuild.ProjectSystem
+        No solution files found in 'e:\Github\anisync'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for 'e:\Github\anisync\anisync.csproj'
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Detecting CSX files in 'e:\Github\anisync'.
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Did not find any CSX files
+[info]: OmniSharp.WorkspaceInitializer
+        Configuration finished.
+[info]: OmniSharp.Stdio.Host
+        Omnisharp server running using Stdio at location 'e:\Github\anisync' on host 5204.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: e:\Github\anisync\anisync.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file 'e:\Github\anisync\anisync.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project 'e:\Github\anisync\anisync.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: anisync
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: e:\Github\anisync\GraphQlClients\Generated\GraphQlClient.StrawberryShake.cs, Line: 14, Column: 22.
+Received response for /v2/getcodeactions but could not find request.
+Received response for /v2/getcodeactions but could not find request.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for 'e:\Github\anisync\anisync.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for 'e:\Github\anisync\anisync.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for 'e:\Github\anisync\anisync.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: e:\Github\anisync\anisync.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file 'e:\Github\anisync\anisync.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: anisync
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\DotNet.Glob.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\GreenDonut.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Abstractions.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Execution.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Fetching.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Language.SyntaxTree.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Language.Utf8.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Language.Visitors.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Language.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Stitching.Abstractions.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Stitching.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Subscriptions.InMemory.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Subscriptions.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Types.CursorPagination.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Types.Mutations.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Types.OffsetPagination.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Types.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Utilities.Introspection.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Utilities.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\HotChocolate.Validation.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Humanizer.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Bcl.AsyncInterfaces.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Workspaces.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.CodeAnalysis.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.Configuration.Abstractions.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.Configuration.Binder.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.Configuration.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.DependencyInjection.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.DiagnosticAdapter.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.Http.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.Logging.Abstractions.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.Logging.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.ObjectPool.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.Options.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Microsoft.Extensions.Primitives.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\Newtonsoft.Json.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\StrawberryShake.CodeGeneration.CSharp.Analyzers.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\StrawberryShake.CodeGeneration.CSharp.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\StrawberryShake.CodeGeneration.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\StrawberryShake.Tools.Configuration.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Buffers.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Collections.Immutable.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.ComponentModel.Annotations.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Composition.AttributedModel.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Composition.Convention.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Composition.Hosting.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Composition.Runtime.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Composition.TypedParts.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Diagnostics.DiagnosticSource.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Linq.Expressions.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Linq.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Memory.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Numerics.Vectors.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.ObjectModel.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Reflection.Emit.ILGeneration.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Reflection.Emit.Lightweight.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Reflection.Emit.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Reflection.Metadata.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Reflection.TypeExtensions.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Runtime.CompilerServices.Unsafe.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Text.Encoding.CodePages.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Text.Encodings.Web.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Text.Json.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Threading.Channels.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Threading.Tasks.Extensions.dll
+[info]: OmniSharp.OmniSharpWorkspace
+        Adding analyzer reference: C:\Users\liphv\.nuget\packages\strawberryshake.codegeneration.csharp.analyzers\12.6.2\analyzers\dotnet\cs\System.Threading.dll
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 100,
+  "Command": "/v2/getcodeactions",
+  "Arguments": {
+    "FileName": "e:\\Github\\anisync\\Program.cs",
+    "Line": 20,
+    "Column": 4,
+    "Selection": {
+      "Start": {
+        "Line": 20,
+        "Column": 4
+      },
+      "End": {
+        "Line": 20,
+        "Column": 45
+      }
+    }
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response (476.0708ms) ************ 
+{
+  "Request_seq": 100,
+  "Command": "/v2/getcodeactions",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.\\r\\n   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)\\r\\n   at System.Reflection.RuntimeAssembly.get_DefinedTypes()\\r\\n   at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()\\r\\n   at System.Linq.Enumerable.<ConcatIterator>d__59`1.MoveNext()\\r\\n   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)\\r\\n   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)\\r\\n   at System.Collections.Immutable.ImmutableArray.CreateRange[T](IEnumerable`1 items)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.LoadFrom(Project project) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 93\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.GetAllCodeFixesForProject(ProjectId projectId) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 57\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.GetSortedCodeFixProviders(Document document) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 156\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<AppendFixesAsync>d__13.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<CollectCodeFixesActions>d__12.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 123\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<GetAvailableCodeActions>d__9.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 80\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService.<Handle>d__1.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\GetCodeActionsService.cs:line 32\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<GetFirstNotEmptyResponseFromHandlers>d__19.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<HandleRequestForLanguage>d__20.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 230\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<Process>d__16.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 131\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Stdio.Host.<HandleRequest>d__14.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Stdio\\\\Host.cs:line 218\"",
+  "Body": null,
+  "Seq": 418,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 102,
+  "Command": "/v2/getcodeactions",
+  "Arguments": {
+    "FileName": "e:\\Github\\anisync\\Program.cs",
+    "Line": 20,
+    "Column": 4,
+    "Selection": {
+      "Start": {
+        "Line": 20,
+        "Column": 4
+      },
+      "End": {
+        "Line": 20,
+        "Column": 45
+      }
+    }
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response (2.8990ms) ************ 
+{
+  "Request_seq": 102,
+  "Command": "/v2/getcodeactions",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.\\r\\n   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)\\r\\n   at System.Reflection.RuntimeAssembly.get_DefinedTypes()\\r\\n   at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()\\r\\n   at System.Linq.Enumerable.<ConcatIterator>d__59`1.MoveNext()\\r\\n   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)\\r\\n   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)\\r\\n   at System.Collections.Immutable.ImmutableArray.CreateRange[T](IEnumerable`1 items)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.LoadFrom(Project project) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 93\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.GetAllCodeFixesForProject(ProjectId projectId) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 57\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.GetSortedCodeFixProviders(Document document) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 156\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<AppendFixesAsync>d__13.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<CollectCodeFixesActions>d__12.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 123\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<GetAvailableCodeActions>d__9.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 80\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService.<Handle>d__1.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\GetCodeActionsService.cs:line 32\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<GetFirstNotEmptyResponseFromHandlers>d__19.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<HandleRequestForLanguage>d__20.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 230\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<Process>d__16.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 131\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Stdio.Host.<HandleRequest>d__14.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Stdio\\\\Host.cs:line 218\"",
+  "Body": null,
+  "Seq": 508,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 104,
+  "Command": "/v2/getcodeactions",
+  "Arguments": {
+    "FileName": "e:\\Github\\anisync\\Program.cs",
+    "Line": 20,
+    "Column": 4,
+    "Selection": {
+      "Start": {
+        "Line": 20,
+        "Column": 4
+      },
+      "End": {
+        "Line": 20,
+        "Column": 45
+      }
+    }
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response (2.7908ms) ************ 
+{
+  "Request_seq": 104,
+  "Command": "/v2/getcodeactions",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.\\r\\n   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)\\r\\n   at System.Reflection.RuntimeAssembly.get_DefinedTypes()\\r\\n   at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()\\r\\n   at System.Linq.Enumerable.<ConcatIterator>d__59`1.MoveNext()\\r\\n   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)\\r\\n   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)\\r\\n   at System.Collections.Immutable.ImmutableArray.CreateRange[T](IEnumerable`1 items)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.LoadFrom(Project project) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 93\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.GetAllCodeFixesForProject(ProjectId projectId) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 57\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.GetSortedCodeFixProviders(Document document) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 156\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<AppendFixesAsync>d__13.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<CollectCodeFixesActions>d__12.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 123\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<GetAvailableCodeActions>d__9.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 80\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService.<Handle>d__1.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\GetCodeActionsService.cs:line 32\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<GetFirstNotEmptyResponseFromHandlers>d__19.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<HandleRequestForLanguage>d__20.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 230\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<Process>d__16.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 131\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Stdio.Host.<HandleRequest>d__14.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Stdio\\\\Host.cs:line 218\"",
+  "Body": null,
+  "Seq": 521,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 106,
+  "Command": "/v2/getcodeactions",
+  "Arguments": {
+    "FileName": "e:\\Github\\anisync\\Program.cs",
+    "Line": 20,
+    "Column": 4,
+    "Selection": {
+      "Start": {
+        "Line": 20,
+        "Column": 4
+      },
+      "End": {
+        "Line": 20,
+        "Column": 45
+      }
+    }
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response (2.5709ms) ************ 
+{
+  "Request_seq": 106,
+  "Command": "/v2/getcodeactions",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.\\r\\n   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)\\r\\n   at System.Reflection.RuntimeAssembly.get_DefinedTypes()\\r\\n   at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()\\r\\n   at System.Linq.Enumerable.<ConcatIterator>d__59`1.MoveNext()\\r\\n   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)\\r\\n   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)\\r\\n   at System.Collections.Immutable.ImmutableArray.CreateRange[T](IEnumerable`1 items)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.LoadFrom(Project project) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 93\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.GetAllCodeFixesForProject(ProjectId projectId) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 57\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.GetSortedCodeFixProviders(Document document) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 156\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<AppendFixesAsync>d__13.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<CollectCodeFixesActions>d__12.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 123\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<GetAvailableCodeActions>d__9.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 80\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService.<Handle>d__1.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\GetCodeActionsService.cs:line 32\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<GetFirstNotEmptyResponseFromHandlers>d__19.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<HandleRequestForLanguage>d__20.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 230\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<Process>d__16.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 131\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Stdio.Host.<HandleRequest>d__14.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Stdio\\\\Host.cs:line 218\"",
+  "Body": null,
+  "Seq": 601,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 108,
+  "Command": "/v2/getcodeactions",
+  "Arguments": {
+    "FileName": "e:\\Github\\anisync\\Program.cs",
+    "Line": 20,
+    "Column": 4,
+    "Selection": {
+      "Start": {
+        "Line": 20,
+        "Column": 4
+      },
+      "End": {
+        "Line": 20,
+        "Column": 45
+      }
+    }
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response (2.8240ms) ************ 
+{
+  "Request_seq": 108,
+  "Command": "/v2/getcodeactions",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.\\r\\n   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)\\r\\n   at System.Reflection.RuntimeAssembly.get_DefinedTypes()\\r\\n   at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()\\r\\n   at System.Linq.Enumerable.<ConcatIterator>d__59`1.MoveNext()\\r\\n   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)\\r\\n   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)\\r\\n   at System.Collections.Immutable.ImmutableArray.CreateRange[T](IEnumerable`1 items)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.LoadFrom(Project project) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 93\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.GetAllCodeFixesForProject(ProjectId projectId) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 57\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.GetSortedCodeFixProviders(Document document) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 156\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<AppendFixesAsync>d__13.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<CollectCodeFixesActions>d__12.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 123\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<GetAvailableCodeActions>d__9.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 80\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService.<Handle>d__1.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\GetCodeActionsService.cs:line 32\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<GetFirstNotEmptyResponseFromHandlers>d__19.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<HandleRequestForLanguage>d__20.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 230\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<Process>d__16.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 131\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Stdio.Host.<HandleRequest>d__14.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Stdio\\\\Host.cs:line 218\"",
+  "Body": null,
+  "Seq": 614,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 110,
+  "Command": "/v2/getcodeactions",
+  "Arguments": {
+    "FileName": "e:\\Github\\anisync\\Program.cs",
+    "Line": 20,
+    "Column": 4,
+    "Selection": {
+      "Start": {
+        "Line": 20,
+        "Column": 4
+      },
+      "End": {
+        "Line": 20,
+        "Column": 45
+      }
+    }
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response (2.4557ms) ************ 
+{
+  "Request_seq": 110,
+  "Command": "/v2/getcodeactions",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.\\r\\n   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)\\r\\n   at System.Reflection.RuntimeAssembly.get_DefinedTypes()\\r\\n   at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()\\r\\n   at System.Linq.Enumerable.<ConcatIterator>d__59`1.MoveNext()\\r\\n   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)\\r\\n   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)\\r\\n   at System.Collections.Immutable.ImmutableArray.CreateRange[T](IEnumerable`1 items)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.LoadFrom(Project project) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 93\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.GetAllCodeFixesForProject(ProjectId projectId) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 57\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.GetSortedCodeFixProviders(Document document) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 156\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<AppendFixesAsync>d__13.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<CollectCodeFixesActions>d__12.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 123\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<GetAvailableCodeActions>d__9.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 80\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService.<Handle>d__1.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\GetCodeActionsService.cs:line 32\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<GetFirstNotEmptyResponseFromHandlers>d__19.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<HandleRequestForLanguage>d__20.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 230\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<Process>d__16.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 131\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Stdio.Host.<HandleRequest>d__14.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Stdio\\\\Host.cs:line 218\"",
+  "Body": null,
+  "Seq": 651,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 112,
+  "Command": "/v2/getcodeactions",
+  "Arguments": {
+    "FileName": "e:\\Github\\anisync\\Program.cs",
+    "Line": 20,
+    "Column": 4,
+    "Selection": {
+      "Start": {
+        "Line": 20,
+        "Column": 4
+      },
+      "End": {
+        "Line": 20,
+        "Column": 45
+      }
+    }
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response (2.7614ms) ************ 
+{
+  "Request_seq": 112,
+  "Command": "/v2/getcodeactions",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.\\r\\n   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)\\r\\n   at System.Reflection.RuntimeAssembly.get_DefinedTypes()\\r\\n   at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()\\r\\n   at System.Linq.Enumerable.<ConcatIterator>d__59`1.MoveNext()\\r\\n   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)\\r\\n   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)\\r\\n   at System.Collections.Immutable.ImmutableArray.CreateRange[T](IEnumerable`1 items)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.LoadFrom(Project project) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 93\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.GetAllCodeFixesForProject(ProjectId projectId) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 57\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.GetSortedCodeFixProviders(Document document) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 156\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<AppendFixesAsync>d__13.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<CollectCodeFixesActions>d__12.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 123\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<GetAvailableCodeActions>d__9.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 80\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService.<Handle>d__1.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\GetCodeActionsService.cs:line 32\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<GetFirstNotEmptyResponseFromHandlers>d__19.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<HandleRequestForLanguage>d__20.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 230\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<Process>d__16.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 131\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Stdio.Host.<HandleRequest>d__14.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Stdio\\\\Host.cs:line 218\"",
+  "Body": null,
+  "Seq": 664,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 114,
+  "Command": "/v2/getcodeactions",
+  "Arguments": {
+    "FileName": "e:\\Github\\anisync\\Program.cs",
+    "Line": 20,
+    "Column": 4,
+    "Selection": {
+      "Start": {
+        "Line": 20,
+        "Column": 4
+      },
+      "End": {
+        "Line": 20,
+        "Column": 45
+      }
+    }
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response (2.8294ms) ************ 
+{
+  "Request_seq": 114,
+  "Command": "/v2/getcodeactions",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.\\r\\n   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)\\r\\n   at System.Reflection.RuntimeAssembly.get_DefinedTypes()\\r\\n   at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()\\r\\n   at System.Linq.Enumerable.<ConcatIterator>d__59`1.MoveNext()\\r\\n   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)\\r\\n   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)\\r\\n   at System.Collections.Immutable.ImmutableArray.CreateRange[T](IEnumerable`1 items)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.LoadFrom(Project project) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 93\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.GetAllCodeFixesForProject(ProjectId projectId) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 57\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.GetSortedCodeFixProviders(Document document) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 156\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<AppendFixesAsync>d__13.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<CollectCodeFixesActions>d__12.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 123\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<GetAvailableCodeActions>d__9.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 80\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService.<Handle>d__1.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\GetCodeActionsService.cs:line 32\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<GetFirstNotEmptyResponseFromHandlers>d__19.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<HandleRequestForLanguage>d__20.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 230\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<Process>d__16.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 131\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Stdio.Host.<HandleRequest>d__14.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Stdio\\\\Host.cs:line 218\"",
+  "Body": null,
+  "Seq": 739,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 116,
+  "Command": "/v2/getcodeactions",
+  "Arguments": {
+    "FileName": "e:\\Github\\anisync\\Program.cs",
+    "Line": 20,
+    "Column": 4,
+    "Selection": {
+      "Start": {
+        "Line": 20,
+        "Column": 4
+      },
+      "End": {
+        "Line": 20,
+        "Column": 45
+      }
+    }
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response (2.5345ms) ************ 
+{
+  "Request_seq": 116,
+  "Command": "/v2/getcodeactions",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.\\r\\n   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)\\r\\n   at System.Reflection.RuntimeAssembly.get_DefinedTypes()\\r\\n   at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()\\r\\n   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()\\r\\n   at System.Linq.Enumerable.<ConcatIterator>d__59`1.MoveNext()\\r\\n   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)\\r\\n   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)\\r\\n   at System.Collections.Immutable.ImmutableArray.CreateRange[T](IEnumerable`1 items)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.LoadFrom(Project project) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 93\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects.GetAllCodeFixesForProject(ProjectId projectId) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\CachingCodeFixProviderForProjects.cs:line 57\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.GetSortedCodeFixProviders(Document document) in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 156\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<AppendFixesAsync>d__13.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<CollectCodeFixesActions>d__12.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 123\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2.<GetAvailableCodeActions>d__9.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\BaseCodeActionService.cs:line 80\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService.<Handle>d__1.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Roslyn.CSharp\\\\Services\\\\Refactoring\\\\V2\\\\GetCodeActionsService.cs:line 32\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<GetFirstNotEmptyResponseFromHandlers>d__19.MoveNext()\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<HandleRequestForLanguage>d__20.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 230\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Endpoint.EndpointHandler`2.<Process>d__16.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Host\\\\Endpoint\\\\EndpointHandler.cs:line 131\\r\\n--- End of stack trace from previous location where exception was thrown ---\\r\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\r\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\r\\n   at OmniSharp.Stdio.Host.<HandleRequest>d__14.MoveNext() in D:\\\\a\\\\1\\\\s\\\\src\\\\OmniSharp.Stdio\\\\Host.cs:line 218\"",
+  "Body": null,
+  "Seq": 752,
+  "Type": "response"
+}
