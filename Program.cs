@@ -1,4 +1,5 @@
-﻿using GraphQL.Client;
+using System;
+using GraphQL.Client;
 using Microsoft.Extensions.DependencyInjection;
 using StrawberryShake;
 
