@@ -13,7 +13,7 @@ IServiceProvider serviceProvider = serviceCollection.BuildServiceProvider();
 
 IGraphQlClient client = serviceProvider.GetRequiredService<IGraphQlClient>();
 
-IOperationResult<IGetUserIdResult> result = await client.GetUserId.ExecuteAsync();
+IOperationResult<IGetUserIdResult> result = await client.GetUserId.ExecuteAsync("liphvf");
 
 if (result.IsErrorResult())
 {

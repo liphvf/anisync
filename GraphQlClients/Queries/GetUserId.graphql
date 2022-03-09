@@ -1,5 +1,5 @@
-query GetUserId{
-  User(name:"liphvf") {
+query GetUserId ($name: String){
+  User(name: $name) {
     id
   }
 }
