@@ -5,7 +5,7 @@
     "strawberryShake": {
       "name": "GraphQlClient",
       "url": "https://graphql.anilist.co/",
-      "namespace": "GraphQL.Client",
+      "namespace": "GraphQL.Anilist",
       "dependencyInjection": true,
       "strictSchemaValidation": true,
       "hashAlgorithm": "md5",

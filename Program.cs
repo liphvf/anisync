@@ -1,5 +1,5 @@
 using System;
-using GraphQL.Client;
+using GraphQL.Anilist;
 using Microsoft.Extensions.DependencyInjection;
 using StrawberryShake;
 
