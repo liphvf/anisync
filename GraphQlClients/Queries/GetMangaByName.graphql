@@ -1,0 +1,11 @@
+query GetMangaByName($name: String) {
+  Media(search:$name, type:MANGA) {
+    title {
+      romaji
+      english
+      native
+      userPreferred,
+    },
+    type
+  }
+}

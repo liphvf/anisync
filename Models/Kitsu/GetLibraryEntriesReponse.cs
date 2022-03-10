@@ -4,10 +4,10 @@ namespace anisync.Models.Kitsu
     {
         public int id { get; set; }
 
-        public string type { get; set; }
+        public string type { get; set; } = string.Empty;
 
-        public Attributes attributes { get; set; }
+        public Attributes attributes { get; set; } = new Attributes();
 
-        public Relationships relationships { get; set; }
+        public Relationships relationships { get; set; } = new Relationships();
     }
 }
