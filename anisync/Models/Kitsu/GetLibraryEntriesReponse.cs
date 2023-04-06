@@ -6,7 +6,7 @@ namespace anisync.Models.Kitsu
 
         public string type { get; set; } = string.Empty;
 
-        public Attributes attributes { get; set; } = new Attributes();
+        public EntryAttribute attributes { get; set; } = new EntryAttribute();
 
         public Relationships relationships { get; set; } = new Relationships();
     }
