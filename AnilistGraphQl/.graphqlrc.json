@@ -3,9 +3,9 @@
   "documents": "**/*.graphql",
   "extensions": {
     "strawberryShake": {
-      "name": "GraphQlClient",
+      "name": "AnilistClient",
+      "namespace": "AnilistClient.Graphql",
       "url": "https://graphql.anilist.co/",
-      "namespace": "GraphQL.Client",
       "dependencyInjection": true,
       "strictSchemaValidation": true,
       "hashAlgorithm": "md5",
