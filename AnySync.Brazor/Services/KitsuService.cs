@@ -5,9 +5,9 @@ namespace AnySync.Brazor.Services;
 
 public class KitsuService
 {
-    public async Task<(List<AnimeEntry> animes, List<MangaEntry> mangas)> GetEntries()
+    public async Task<(List<AnimeEntry> animes, List<MangaEntry> mangas)> GetEntries(string kitsuUserName)
     {
-        var nomeUsuario = "liphvf";
+        var nomeUsuario = kitsuUserName;
         var httpClient = new HttpClient();
         var urlPegarNomeUsuario = $"https://kitsu.io/api/edge/users?filter[name]={nomeUsuario}&fields[users]=id";
 

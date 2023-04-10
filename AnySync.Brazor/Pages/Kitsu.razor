@@ -4,33 +4,10 @@
 
 @using anisync.Models.Kitsu.StructuredModels
 
+<input type="text" bind="@kitsuUsername" @oninput="UpdateKitsuUserName" />
+<Button @onclick="GetLibraryEntriesReponse">Carregar Biblioteca</Button>
+
 <h3>Kitsu Anime</h3>
-
-@* <table>
-<thead>
-<tr>
-<th>Pizza Name</th>
-<th>Description</th>
-<th>Vegetarian?</th>
-<th>Vegan?</th>
-<th>Price</th>
-</tr>
-</thead>
-<tbody>
-@foreach (var pizza in todaysPizzas)
-{
-<tr>
-<td>@pizza.Name</td>
-<td>@pizza.Description</td>
-<td>@pizza.Vegetarian</td>
-<td>@pizza.Vegan</td>
-<td>@pizza.Price</td>
-</tr>
-}
-</tbody>
-</table>
-
-<h3>Kitsu Manga</h3> *@
 
 <table>
     <thead>
@@ -48,7 +25,8 @@
             {
                 <tr>
                     @* <td>@animeEntry.AnimeAttribute.posterImage.small</td> *@
-                    <td><img src="@animeEntry.AnimeAttribute.posterImage.small" alt="Your Image" style="width: 64px; height: 64px; object-fit: cover;"></td>
+                    <td><img src="@animeEntry.AnimeAttribute.posterImage.small" alt="Your Image"
+                            style="width: 64px; height: 64px; object-fit: cover;"></td>
                     <td>@animeEntry.EntryId</td>
                     <td>@animeEntry.AnimeAttribute.slug</td>
                     <td>@animeEntry.AnimeAttribute.canonicalTitle</td>
@@ -58,14 +36,58 @@
     </tbody>
 </table>
 
+<h3>Kitsu Manga</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Thumb</th>
+            <th>Id</th>
+            <th>Slug</th>
+            <th>canonicalTitle?</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (animeEntries != null)
+        {
+            @foreach (var mangaEntry in mangaEntries)
+            {
+                <tr>
+                    @* <td>@animeEntry.AnimeAttribute.posterImage.small</td> *@
+                    <td><img src="@mangaEntry.MangaAttribute.posterImage.small" alt="Your Image"
+                            style="width: 64px; height: 64px; object-fit: cover;"></td>
+                    <td>@mangaEntry.EntryId</td>
+                    <td>@mangaEntry.MangaAttribute.slug</td>
+                    <td>@mangaEntry.MangaAttribute.canonicalTitle</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
 @code {
 
-    public List<AnimeEntry> animeEntries;
-    public List<MangaEntry> mangaEntries;
-    protected override async Task OnInitializedAsync()
+    public List<AnimeEntry>? animeEntries;
+    public List<MangaEntry>? mangaEntries;
+
+    @* protected override async Task OnInitializedAsync()
+{
+var xuxu = await service.GetEntries();
+animeEntries = xuxu.animes;
+mangaEntries = xuxu.mangas;
+} *@
+
+    private string kitsuUsername { get; set; }
+
+    private void UpdateKitsuUserName(ChangeEventArgs e)
     {
-        var xuxu = await service.GetEntries();
-        animeEntries = xuxu.animes;
-        mangaEntries = xuxu.mangas;
+        kitsuUsername = e.Value.ToString();
+    }
+
+    public async Task GetLibraryEntriesReponse()
+    {
+        var kitsuEntries = await service.GetEntries(kitsuUsername);
+        animeEntries = kitsuEntries.animes;
+        mangaEntries = kitsuEntries.mangas;
     }
 }
