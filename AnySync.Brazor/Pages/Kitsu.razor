@@ -1,0 +1,71 @@
+﻿@page "/kitsu"
+@using AnySync.Brazor.Services
+@inject KitsuService service
+
+@using anisync.Models.Kitsu.StructuredModels
+
+<h3>Kitsu Anime</h3>
+
+@* <table>
+<thead>
+<tr>
+<th>Pizza Name</th>
+<th>Description</th>
+<th>Vegetarian?</th>
+<th>Vegan?</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+@foreach (var pizza in todaysPizzas)
+{
+<tr>
+<td>@pizza.Name</td>
+<td>@pizza.Description</td>
+<td>@pizza.Vegetarian</td>
+<td>@pizza.Vegan</td>
+<td>@pizza.Price</td>
+</tr>
+}
+</tbody>
+</table>
+
+<h3>Kitsu Manga</h3> *@
+
+<table>
+    <thead>
+        <tr>
+            <th>Thumb</th>
+            <th>Id</th>
+            <th>Slug</th>
+            <th>canonicalTitle?</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (animeEntries != null)
+        {
+            @foreach (var animeEntry in animeEntries)
+            {
+                <tr>
+                    @* <td>@animeEntry.AnimeAttribute.posterImage.small</td> *@
+                    <td><img src="@animeEntry.AnimeAttribute.posterImage.small" alt="Your Image" style="width: 64px; height: 64px; object-fit: cover;"></td>
+                    <td>@animeEntry.EntryId</td>
+                    <td>@animeEntry.AnimeAttribute.slug</td>
+                    <td>@animeEntry.AnimeAttribute.canonicalTitle</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+
+    public List<AnimeEntry> animeEntries;
+    public List<MangaEntry> mangaEntries;
+    protected override async Task OnInitializedAsync()
+    {
+        var xuxu = await service.GetEntries();
+        animeEntries = xuxu.animes;
+        mangaEntries = xuxu.mangas;
+    }
+}
