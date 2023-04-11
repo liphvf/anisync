@@ -1,10 +1,17 @@
 using anisync.Models.Kitsu;
 using anisync.Models.Kitsu.StructuredModels;
+using AnySync.Brazor.Data;
 
 namespace AnySync.Brazor.Services;
 
 public class KitsuService
 {
+    private readonly DatabaseContext _databaseContext;
+    public KitsuService(DatabaseContext databaseContext)
+    {
+        _databaseContext = databaseContext;
+
+    }
     public async Task<(List<AnimeEntry> animes, List<MangaEntry> mangas)> GetEntries(string kitsuUserName)
     {
         var nomeUsuario = kitsuUserName;
