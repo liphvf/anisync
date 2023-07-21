@@ -4,6 +4,7 @@ using AnySync.Brazor.Data;
 using AnySync.Brazor.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
+using AnySync.Brazor.AppSettings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,10 +12,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.AddSingleton<KitsuService>();
+builder.Services.AddScoped<KitsuService>();
+string? connectionString = builder.Configuration.GetSection("DatabaseConnectionString")?.Value;
 
-builder.Services.AddDbContext<DatabaseContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DatabaseConnectionString")
-    , o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)).UseSnakeCaseNamingConvention());
+// var applicationSettings = new ApplicationSettings();
+// builder.Configuration.Bind(applicationSettings);
+// builder.Services.AddSingleton(applicationSettings);
+
+builder.Services.AddDbContext<DatabaseContext>(options => options.UseNpgsql(connectionString
+, o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)).UseSnakeCaseNamingConvention());
 
 var app = builder.Build();
 
