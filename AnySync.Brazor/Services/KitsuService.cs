@@ -114,6 +114,19 @@ public class KitsuService
             }
         }
 
+        foreach (var mangaDto in mangasDto)
+        {
+            var entry = user.Library.MangaEntries.SingleOrDefault(e => e.KitsuId == mangaDto.EntryId);
+            if (entry == default)
+            {
+                user.Library.MangaEntries.Add(mangaDto.MapNewMangaEntry());
+            }
+            else
+            {
+                entry.MapOver(mangaDto);
+            }
+        }
+
         await _databaseContext.SaveChangesAsync();
     }
 }

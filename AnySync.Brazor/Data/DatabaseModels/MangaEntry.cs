@@ -12,7 +12,7 @@ public class MangaEntry
 
     public List<string>? AlternativesTitles { get; set; }
 
-    public int EpisodeCount { get; set; }
+    public int? ChapterCount { get; set; }
 
     public required string slug { get; set; }
 
@@ -24,7 +24,7 @@ public class MangaEntry
 
     public MangaStatus Status { get; set; }
 
-    public int Score { get; set; }
+    public int? Score { get; set; }
 
     public int ChapterProgress { get; set; }
 
@@ -32,9 +32,9 @@ public class MangaEntry
 
     public int RereadCount { get; set; }
 
-    public DateTimeOffset StartDate { get; set; }
+    public DateTimeOffset? StartDate { get; set; }
 
-    public DateTimeOffset FinishDate { get; set; }
+    public DateTimeOffset? FinishDate { get; set; }
 
     public string? Notes { get; set; }
 

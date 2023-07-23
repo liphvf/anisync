@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using AnySync.Brazor.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -12,9 +13,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace AnySync.Brazor.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20230723043149_newChanges2")]
+    partial class newChanges2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -89,7 +92,7 @@ namespace AnySync.Brazor.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("rewatch_count");
 
-                    b.Property<int?>("Score")
+                    b.Property<int>("Score")
                         .HasColumnType("integer")
                         .HasColumnName("score");
 
@@ -204,7 +207,7 @@ namespace AnySync.Brazor.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("reread_count");
 
-                    b.Property<int?>("Score")
+                    b.Property<int>("Score")
                         .HasColumnType("integer")
                         .HasColumnName("score");
 

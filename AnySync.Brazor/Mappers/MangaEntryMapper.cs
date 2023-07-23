@@ -4,39 +4,39 @@ using AnySync.Brazor.Data.DatabaseModels;
 
 namespace AnySync.Brazor.Mappers;
 
-public static class AnimeEntryMapper
+public static class MangaEntryMapper
 {
-    public static void MapOver(this AnimeEntry entry, AnimeEntryDto dto)
+    public static void MapOver(this MangaEntry entry, MangaEntryDto dto)
     {
         entry.KitsuId = dto.EntryId;
         // entry.AnilistId = ;
-        entry.CanonicalTitle = dto.AnimeAttribute.canonicalTitle;
-        entry.AlternativesTitles = ConvertTitle(dto.AnimeAttribute.titles);
-        entry.EpisodeCount = dto.AnimeAttribute.episodeCount;
-        entry.slug = dto.AnimeAttribute.slug;
-        entry.ImageURL = dto.AnimeAttribute?.posterImage?.small;
-        entry.KitsuLink = $"https://kitsu.io/anime/{dto.AnimeAttribute.slug}";
+        entry.CanonicalTitle = dto.MangaAttribute.canonicalTitle;
+        entry.AlternativesTitles = ConvertTitle(dto.MangaAttribute.titles);
+        entry.ChapterCount = dto.MangaAttribute.chapterCount;
+        entry.slug = dto.MangaAttribute.slug;
+        entry.ImageURL = dto.MangaAttribute?.posterImage?.small;
+        entry.KitsuLink = $"https://kitsu.io/manga/{dto.MangaAttribute?.slug}";
         // entry.AnilistLink = ;
         entry.Status = ConvertStatus(dto.EntryAttribute.status);
         entry.Score = dto.EntryAttribute.ratingTwenty;
-        entry.Progress = dto.EntryAttribute.progress; ;
-        entry.RewatchCount = dto.EntryAttribute.reconsumeCount;
+        entry.ChapterProgress = dto.EntryAttribute.progress;
+        entry.RereadCount = dto.EntryAttribute.reconsumeCount;
         entry.StartDate = dto.EntryAttribute.startedAt;
         entry.FinishDate = dto.EntryAttribute.finishedAt;
         entry.Notes = dto.EntryAttribute.notes;
         entry.Public = !dto.EntryAttribute.@private;
     }
 
-    public static AnimeEntry MapNewAnimeEntry(this AnimeEntryDto dto)
+    public static MangaEntry MapNewMangaEntry(this MangaEntryDto dto)
     {
-        var animeEntry =  new AnimeEntry
+        var mangaEntry = new MangaEntry
         {
-            CanonicalTitle = dto.AnimeAttribute.canonicalTitle,
-            slug = dto.AnimeAttribute.slug
+            CanonicalTitle = dto.MangaAttribute.canonicalTitle,
+            slug = dto.MangaAttribute.slug
         };
-        animeEntry.MapOver(dto);
+        mangaEntry.MapOver(dto);
 
-        return animeEntry;
+        return mangaEntry;
     }
 
     private static List<string> ConvertTitle(Titles? titles)
@@ -63,16 +63,16 @@ public static class AnimeEntryMapper
         return titlesOnList;
     }
 
-    public static AnimeStatus ConvertStatus(string status)
+    public static MangaStatus ConvertStatus(string status)
     {
         return status.ToLower() switch
         {
-            "current" => AnimeStatus.Watching,
-            "completed" => AnimeStatus.Completed,
-            "rewatching" => AnimeStatus.Rewatching,
-            "on_hold" => AnimeStatus.Paused,
-            "dropped" => AnimeStatus.Dropped,
-            "planned" => AnimeStatus.PlanToWatch,
+            "current" => MangaStatus.Reading,
+            "completed" => MangaStatus.Completed,
+            "rewatching" => MangaStatus.Rereading,
+            "on_hold" => MangaStatus.Paused,
+            "dropped" => MangaStatus.Dropped,
+            "planned" => MangaStatus.PlanToRead,
             _ => throw new ApplicationException($"status não encontrado: {status}"),
         };
     }

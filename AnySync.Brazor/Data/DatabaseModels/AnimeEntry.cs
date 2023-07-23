@@ -24,7 +24,7 @@ public class AnimeEntry
 
     public AnimeStatus Status { get; set; }
 
-    public int Score { get; set; }
+    public int? Score { get; set; }
 
     public int Progress { get; set; }
 
