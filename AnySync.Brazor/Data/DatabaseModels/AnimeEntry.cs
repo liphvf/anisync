@@ -6,13 +6,13 @@ public class AnimeEntry
 
     public int KitsuId { get; set; }
 
-    public int AnilistId { get; set; }
+    public int? AnilistId { get; set; }
 
     public required string CanonicalTitle { get; set; }
 
     public List<string>? AlternativesTitles { get; set; }
 
-    public int EpisodeCount { get; set; }
+    public int? EpisodeCount { get; set; }
 
     public required string slug { get; set; }
 
@@ -30,9 +30,9 @@ public class AnimeEntry
 
     public int RewatchCount { get; set; }
 
-    public DateTimeOffset StartDate { get; set; }
+    public DateTimeOffset? StartDate { get; set; }
 
-    public DateTimeOffset FinishDate { get; set; }
+    public DateTimeOffset? FinishDate { get; set; }
 
     public string? Notes { get; set; }
 

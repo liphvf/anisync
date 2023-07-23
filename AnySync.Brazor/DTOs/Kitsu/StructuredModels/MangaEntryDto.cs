@@ -3,7 +3,7 @@ using anisync.Models.Kitsu.MangaData;
 
 namespace anisync.Models.Kitsu.StructuredModels;
 
-public class MangaEntry
+public class MangaEntryDto
 {
     public int EntryId { get; set; }
 

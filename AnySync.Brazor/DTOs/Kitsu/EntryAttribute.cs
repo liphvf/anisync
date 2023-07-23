@@ -13,8 +13,8 @@ namespace anisync.Models.Kitsu
         public bool @private { get; set; }
         public string reactionSkipped { get; set; } = string.Empty;
         public DateTime? progressedAt { get; set; }
-        public DateTime? startedAt { get; set; }
-        public DateTime? finishedAt { get; set; }
+        public DateTimeOffset? startedAt { get; set; }
+        public DateTimeOffset? finishedAt { get; set; }
         public string rating { get; set; } = string.Empty;
         public int? ratingTwenty { get; set; }
     }

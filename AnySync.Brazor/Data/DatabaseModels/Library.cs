@@ -4,7 +4,7 @@ public class Library
 {
     public int Id { get; set; }
 
-    public required int UserId { get; set; }
+    public int UserId { get; set; }
 
     public required List<AnimeEntry> AnimesEntries { get; set; }
 

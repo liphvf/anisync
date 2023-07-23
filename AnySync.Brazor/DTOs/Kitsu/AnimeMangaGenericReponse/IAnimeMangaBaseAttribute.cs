@@ -4,12 +4,12 @@ public interface IAnimeMangaBaseAttribute
 {
     public DateTime createdAt { get; set; }
     public DateTime? updatedAt { get; set; }
-    public string? slug { get; set; }
+    public string slug { get; set; }
     public string? synopsis { get; set; }
     public string? description { get; set; }
     public int? coverImageTopOffset { get; set; }
     public Titles? titles { get; set; }
-    public string? canonicalTitle { get; set; }
+    public string canonicalTitle { get; set; }
     public List<string> abbreviatedTitles { get; set; }
     public string? averageRating { get; set; }
     public int? userCount { get; set; }
