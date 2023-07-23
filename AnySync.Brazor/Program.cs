@@ -5,6 +5,7 @@ using AnySync.Brazor.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using AnySync.Brazor.AppSettings;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,8 @@ string? connectionString = builder.Configuration.GetSection("DatabaseConnectionS
 
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseNpgsql(connectionString
 , o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)).UseSnakeCaseNamingConvention());
+
+builder.Services.AddMudServices();
 
 var app = builder.Build();
 

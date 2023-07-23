@@ -4,80 +4,63 @@
 
 @using anisync.Models.Kitsu.StructuredModels
 
-<input type="text" bind="@kitsuUsername" @oninput="UpdateKitsuUserName" />
-<Button @onclick="GetLibraryEntriesReponse">Carregar Biblioteca</Button>
+<MudTextField @bind-Value="@kitsuUsername" Label="Kitsu Username" Variant="Variant.Outlined"
+@oninput="UpdateKitsuUserName" Error="@_kitsuUsernameHasError"></MudTextField>
+@if (_kitsuUsernameHasError)
+{
+    <MudAlert Severity="Severity.Error" Dense="true" Class="my-2">Kitsu Username is necessary.</MudAlert>
+}
+<MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="GetLibraryEntriesReponse">Carregar Biblioteca
+</MudButton>
 
-<h3>Kitsu Anime</h3>
-
-<table>
-    <thead>
-        <tr>
-            <th>Thumb</th>
-            <th>Id</th>
-            <th>Slug</th>
-            <th>canonicalTitle?</th>
-        </tr>
-    </thead>
-    <tbody>
-        @if (animeEntries != null)
-        {
-            @foreach (var animeEntry in animeEntries)
-            {
-                <tr>
-                    @* <td>@animeEntry.AnimeAttribute.posterImage.small</td> *@
-                    <td><img src="@animeEntry.AnimeAttribute.posterImage.small" alt="Your Image"
-                            style="width: 64px; height: 64px; object-fit: cover;"></td>
-                    <td>@animeEntry.EntryId</td>
-                    <td>@animeEntry.AnimeAttribute.slug</td>
-                    <td>@animeEntry.AnimeAttribute.canonicalTitle</td>
-                </tr>
-            }
-        }
-    </tbody>
-</table>
-
-<h3>Kitsu Manga</h3>
-
-<table>
-    <thead>
-        <tr>
-            <th>Thumb</th>
-            <th>Id</th>
-            <th>Slug</th>
-            <th>canonicalTitle?</th>
-        </tr>
-    </thead>
-    <tbody>
-        @if (animeEntries != null)
-        {
-            @foreach (var mangaEntry in mangaEntries)
-            {
-                <tr>
-                    @* <td>@animeEntry.AnimeAttribute.posterImage.small</td> *@
-                    <td><img src="@mangaEntry.MangaAttribute.posterImage.small" alt="Your Image"
-                            style="width: 64px; height: 64px; object-fit: cover;"></td>
-                    <td>@mangaEntry.EntryId</td>
-                    <td>@mangaEntry.MangaAttribute.slug</td>
-                    <td>@mangaEntry.MangaAttribute.canonicalTitle</td>
-                </tr>
-            }
-        }
-    </tbody>
-</table>
+<MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
+    <MudTabPanel Text="Anime">
+        <MudTable Items="@animeEntries" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading"
+            LoadingProgressColor="Color.Info">
+            <HeaderContent>
+                <MudTh>Thumb</MudTh>
+                <MudTh>Canonical Title</MudTh>
+                <MudTh>Kitsu Link</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Thumb">
+                    <MudImage Src="@context.AnimeAttribute.posterImage.small" Width="64" Height="64" Alt="Mony the dog"
+                        Elevation="25" Class="rounded-lg" />
+                </MudTd>
+                <MudTd DataLabel="Canonical Title">@context.AnimeAttribute.canonicalTitle</MudTd>
+                <MudTd DataLabel="Kitsu Link">@context.AnimeAttribute.canonicalTitle</MudTd>
+            </RowTemplate>
+        </MudTable>
+    </MudTabPanel>
+    <MudTabPanel Text="Manga">
+        <MudTable Items="@mangaEntries" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading"
+            LoadingProgressColor="Color.Info">
+            <HeaderContent>
+                <MudTh>Thumb</MudTh>
+                <MudTh>Canonical Title</MudTh>
+                <MudTh>Kitsu Link</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Thumb">
+                    <MudImage Src="@context.MangaAttribute.posterImage.small" Width="64" Height="64" Alt="Mony the dog"
+                        Elevation="25" Class="rounded-lg" />
+                </MudTd>
+                <MudTd DataLabel="Canonical Title">@context.MangaAttribute.canonicalTitle</MudTd>
+                <MudTd DataLabel="Kitsu Link">@context.MangaAttribute.canonicalTitle</MudTd>
+            </RowTemplate>
+        </MudTable>
+    </MudTabPanel>
+</MudTabs>
 
 @code {
 
-    public List<AnimeEntryDto>? animeEntries;
-    public List<MangaEntryDto>? mangaEntries;
+    public List<AnimeEntryDto>? animeEntries = new List<AnimeEntryDto>();
+    public List<MangaEntryDto>? mangaEntries = new List<MangaEntryDto>();
 
-    @* protected override async Task OnInitializedAsync()
-{
-var xuxu = await service.GetEntries();
-animeEntries = xuxu.animes;
-mangaEntries = xuxu.mangas;
-} *@
 
-    private string kitsuUsername { get; set; }
+    private bool _loading;
+    private string? kitsuUsername;
+    private bool _kitsuUsernameHasError = false;
 
     private void UpdateKitsuUserName(ChangeEventArgs e)
     {
@@ -86,8 +69,16 @@ mangaEntries = xuxu.mangas;
 
     public async Task GetLibraryEntriesReponse()
     {
+        if (string.IsNullOrEmpty(kitsuUsername))
+        {
+            _kitsuUsernameHasError = true;
+            return;
+        }
+
+        _loading = true;
         var kitsuEntries = await service.GetEntries(kitsuUsername);
         animeEntries = kitsuEntries.animes;
         mangaEntries = kitsuEntries.mangas;
+        _loading = false;
     }
 }
