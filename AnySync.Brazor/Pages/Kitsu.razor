@@ -10,8 +10,13 @@
 {
     <MudAlert Severity="Severity.Error" Dense="true" Class="my-2">Kitsu Username is necessary.</MudAlert>
 }
-<MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="GetLibraryEntriesReponse">Carregar Biblioteca
-</MudButton>
+
+<MudButtonGroup Color="Color.Primary" Variant="Variant.Outlined">
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="LoadLibrary">Load Library
+    </MudButton>
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="Sync">Sync</MudButton>
+</MudButtonGroup>
+
 
 <MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
     <MudTabPanel Text="Anime">
@@ -24,11 +29,11 @@
             </HeaderContent>
             <RowTemplate>
                 <MudTd DataLabel="Thumb">
-                    <MudImage Src="@context.AnimeAttribute.posterImage.small" Width="64" Height="64" Alt="Mony the dog"
+                    <MudImage Src="@context.Image" Width="64" Height="64" Alt="Mony the dog"
                         Elevation="25" Class="rounded-lg" />
                 </MudTd>
-                <MudTd DataLabel="Canonical Title">@context.AnimeAttribute.canonicalTitle</MudTd>
-                <MudTd DataLabel="Kitsu Link">@context.AnimeAttribute.canonicalTitle</MudTd>
+                <MudTd DataLabel="Canonical Title">@context.CanonicalTitle</MudTd>
+                <MudTd DataLabel="Kitsu Link">@context.KitsuLink</MudTd>
             </RowTemplate>
         </MudTable>
     </MudTabPanel>
@@ -42,11 +47,11 @@
             </HeaderContent>
             <RowTemplate>
                 <MudTd DataLabel="Thumb">
-                    <MudImage Src="@context.MangaAttribute.posterImage.small" Width="64" Height="64" Alt="Mony the dog"
+                    <MudImage Src="@context.Image" Width="64" Height="64" Alt="Mony the dog"
                         Elevation="25" Class="rounded-lg" />
                 </MudTd>
-                <MudTd DataLabel="Canonical Title">@context.MangaAttribute.canonicalTitle</MudTd>
-                <MudTd DataLabel="Kitsu Link">@context.MangaAttribute.canonicalTitle</MudTd>
+                <MudTd DataLabel="Canonical Title">@context.CanonicalTitle</MudTd>
+                <MudTd DataLabel="Kitsu Link">@context.KitsuLink</MudTd>
             </RowTemplate>
         </MudTable>
     </MudTabPanel>
@@ -54,9 +59,8 @@
 
 @code {
 
-    public List<AnimeEntryDto>? animeEntries = new List<AnimeEntryDto>();
-    public List<MangaEntryDto>? mangaEntries = new List<MangaEntryDto>();
-
+    public List<PagesDatas.KitsuPageLibraryAnimeData>? animeEntries = new();
+    public List<PagesDatas.KitsuPageLibraryMangaData>? mangaEntries = new();
 
     private bool _loading;
     private string? kitsuUsername;
@@ -67,7 +71,7 @@
         kitsuUsername = e.Value.ToString();
     }
 
-    public async Task GetLibraryEntriesReponse()
+    public async Task Sync()
     {
         if (string.IsNullOrEmpty(kitsuUsername))
         {
@@ -77,8 +81,23 @@
 
         _loading = true;
         var kitsuEntries = await service.GetEntries(kitsuUsername);
-        animeEntries = kitsuEntries.animes;
-        mangaEntries = kitsuEntries.mangas;
+        animeEntries = kitsuEntries.Animes;
+        mangaEntries = kitsuEntries.Mangas;
+        _loading = false;
+    }
+
+    public async Task LoadLibrary()
+    {
+        if (string.IsNullOrEmpty(kitsuUsername))
+        {
+            _kitsuUsernameHasError = true;
+            return;
+        }
+
+        _loading = true;
+        var kitsuEntries = await service.GetEntries(kitsuUsername);
+        animeEntries = kitsuEntries.Animes;
+        mangaEntries = kitsuEntries.Mangas;
         _loading = false;
     }
 }

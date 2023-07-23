@@ -4,6 +4,7 @@ using AnySync.Brazor.Data;
 using AnySync.Brazor.Data.DatabaseModels;
 using Microsoft.EntityFrameworkCore;
 using AnySync.Brazor.Mappers;
+using AnySync.Brazor.PagesDatas;
 
 namespace AnySync.Brazor.Services;
 
@@ -15,7 +16,8 @@ public class KitsuService
         _databaseContext = databaseContext;
 
     }
-    public async Task<(List<AnimeEntryDto> animes, List<MangaEntryDto> mangas)> GetEntries(string kitsuUserName)
+
+    public async Task<KitsuPageLibraryData> GetEntries(string kitsuUserName)
     {
         var nomeUsuario = kitsuUserName;
         var httpClient = new HttpClient();
@@ -75,11 +77,44 @@ public class KitsuService
                 ultimaPaginaRodou = true;
             }
         }
-        await UpdateDatabase(kitsuUserName, animeEntries, mangaEntries);
-        return (animeEntries, mangaEntries);
+        await UpdateOrInsertOnDatabase(kitsuUserName, animeEntries, mangaEntries);
+        return await LoadLibrary(kitsuUserName);
     }
 
-    public async Task UpdateDatabase(string kitsuUserName, List<AnimeEntryDto> animesDto, List<MangaEntryDto> mangasDto)
+    public async Task<KitsuPageLibraryData> LoadLibrary(string kitsuUserName)
+    {
+        var user = await _databaseContext.Users
+        .Include(e => e.Library).ThenInclude(e => e.AnimesEntries)
+        .Include(e => e.Library).ThenInclude(e => e.MangaEntries)
+        .SingleOrDefaultAsync(u => u.KitsuUserName == kitsuUserName);
+
+        if (user == null)
+        {
+            return new KitsuPageLibraryData();
+        }
+
+        var animes = user.Library.AnimesEntries.Select(e => new KitsuPageLibraryAnimeData
+        {
+            Image = e.ImageURL,
+            CanonicalTitle = e.CanonicalTitle,
+            KitsuLink = e.KitsuLink
+        }).ToList();
+
+        var mangas = user.Library.MangaEntries.Select(e => new KitsuPageLibraryMangaData
+        {
+            Image = e.ImageURL,
+            CanonicalTitle = e.CanonicalTitle,
+            KitsuLink = e.KitsuLink
+        }).ToList();
+
+        return new KitsuPageLibraryData
+        {
+            Animes = animes,
+            Mangas = mangas
+        };
+    }
+
+    public async Task UpdateOrInsertOnDatabase(string kitsuUserName, List<AnimeEntryDto> animesDto, List<MangaEntryDto> mangasDto)
     {
         var user = await _databaseContext.Users
         .Include(e => e.Library).ThenInclude(e => e.AnimesEntries)
