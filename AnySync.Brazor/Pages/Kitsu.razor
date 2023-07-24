@@ -21,7 +21,12 @@
 <MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
     <MudTabPanel Text="Anime">
         <MudTable Items="@animeEntries" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading"
-            LoadingProgressColor="Color.Info">
+            LoadingProgressColor="Color.Info" Filter="new Func<PagesDatas.KitsuPageLibraryAnimeData, bool>(CallFilterAnime)">
+            <ToolBarContent>
+                <MudText Typo="Typo.h6">Anime</MudText>
+                <MudSpacer />
+                <MudTextField @bind-Value="animeSearch" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+            </ToolBarContent>
             <HeaderContent>
                 <MudTh>Thumb</MudTh>
                 <MudTh>Canonical Title</MudTh>
@@ -65,6 +70,7 @@
     private bool _loading;
     private string? kitsuUsername;
     private bool _kitsuUsernameHasError = false;
+    private string animeSearch = string.Empty;
 
     private void UpdateKitsuUserName(ChangeEventArgs e)
     {
@@ -100,4 +106,10 @@
         mangaEntries = kitsuEntries.Mangas;
         _loading = false;
     }
+
+    private bool CallFilterAnime(PagesDatas.KitsuPageLibraryAnimeData actualAnime) => FilterAnime(actualAnime, animeSearch);
+    private bool FilterAnime(PagesDatas.KitsuPageLibraryAnimeData actualAnime, string searchString) 
+    {
+        return actualAnime.CanonicalTitle.ToLower().Contains(searchString.ToLower());
+    } 
 }

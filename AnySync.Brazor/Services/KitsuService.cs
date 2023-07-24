@@ -34,13 +34,7 @@ public class KitsuService
         var ultimaPaginaRodou = false;
         while (ultimaPaginaRodou == false)
         {
-            var libraryEntries = await httpClient.GetFromJsonAsync<ResponseKitsu<GetLibraryEntriesReponse>>(proximaPaginaLink);
-
-            if (libraryEntries == null)
-            {
-                throw new ApplicationException("Erro ao obter biblioteca");
-            }
-
+            var libraryEntries = await httpClient.GetFromJsonAsync<ResponseKitsu<GetLibraryEntriesReponse>>(proximaPaginaLink) ?? throw new ApplicationException("Erro ao obter biblioteca");
             var newAnimeEntries = libraryEntries.Data!.Where(e => e.relationships.anime.Data != null).Select(a => new AnimeEntryDto
             {
                 EntryId = a.id,
