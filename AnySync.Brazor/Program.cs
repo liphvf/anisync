@@ -1,10 +1,6 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
 using AnySync.Brazor.Data;
 using AnySync.Brazor.Services;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage;
-using AnySync.Brazor.AppSettings;
 using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +20,9 @@ builder.Services.AddDbContext<DatabaseContext>(options => options.UseNpgsql(conn
 , o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)).UseSnakeCaseNamingConvention());
 
 builder.Services.AddMudServices();
+
+builder.Services.AddAnilistGraphQlClient().ConfigureHttpClient(client => client.BaseAddress = new Uri("https://graphql.anilist.co/"));
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://localhost:5133/") });
 
 var app = builder.Build();
 
@@ -53,4 +52,4 @@ app.UseRouting();
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
-app.Run();
+await app.RunAsync();

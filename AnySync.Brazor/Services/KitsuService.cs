@@ -5,14 +5,17 @@ using AnySync.Brazor.Data.DatabaseModels;
 using Microsoft.EntityFrameworkCore;
 using AnySync.Brazor.Mappers;
 using AnySync.Brazor.PagesDatas;
+using Anysync.AnilistGraphQL;
 
 namespace AnySync.Brazor.Services;
 
 public class KitsuService
 {
     private readonly DatabaseContext _databaseContext;
-    public KitsuService(DatabaseContext databaseContext)
+    private readonly IAnilistGraphQlClient _anilistGraphQlClient;
+    public KitsuService(DatabaseContext databaseContext, IAnilistGraphQlClient anilistGraphQlClient)
     {
+        _anilistGraphQlClient = anilistGraphQlClient;
         _databaseContext = databaseContext;
 
     }
@@ -77,6 +80,9 @@ public class KitsuService
 
     public async Task<KitsuPageLibraryData> LoadLibrary(string kitsuUserName)
     {
+
+        var result = await _anilistGraphQlClient.GetAnimeByName.ExecuteAsync("Bleach");
+
         var user = await _databaseContext.Users
         .Include(e => e.Library).ThenInclude(e => e.AnimesEntries)
         .Include(e => e.Library).ThenInclude(e => e.MangaEntries)
